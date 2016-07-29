@@ -27,7 +27,6 @@ namespace WVVM
     public class Student : INotifyPropertyChanged
     {
         private int pid;
-
         public int Pid
         {
             get { return pid; }
@@ -42,9 +41,7 @@ namespace WVVM
                 }
             }
         }
-
         private string pname;
-
         public string Pname
         {
             get { return pname; }
@@ -57,9 +54,7 @@ namespace WVVM
                 }
             }
         }
-
         public event PropertyChangedEventHandler PropertyChanged;
-
         protected void OnPropertyChanged(string propertyName)
         {
             PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
